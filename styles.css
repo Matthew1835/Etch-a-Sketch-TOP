@@ -1,0 +1,116 @@
+:root {
+    --border-color: ;
+    --button-color: ;
+    --hover-color: ;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5px;
+}
+.title-container h1 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clear-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.popup-btn {
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+.popup-btn:hover {
+    background-color: rgb(215, 196, 170);
+}
+.grid-container {
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.grid-container div {
+    border: 1px solid black;
+    aspect-ratio: 1 / 1;
+}
+
+@media only screen AND (min-width: 768px) {
+    .title-container h1 {
+        font-size: 2rem;
+    }
+    .button-container {
+        gap: 1rem;
+    }
+    .clear-btn i {
+        font-size: 1.5rem;
+    }
+    .popup-btn {
+        border-radius: 10px;
+        border: none;
+        padding: 5px 10px;
+        background-color: blanchedalmond;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+}
+
+@media only screen AND (min-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+    main {
+        padding: 30px;
+        gap: 20px;
+    }
+    .title-container h1 {
+        font-size: 2rem;
+    }
+    .button-container {
+        gap: 1rem;
+    }
+    .clear-btn i {
+        font-size: 1.5rem;
+    }
+    .popup-btn {
+        border-radius: 10px;
+        border: none;
+        padding: 10px 20px;
+        background-color: blanchedalmond;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+}
