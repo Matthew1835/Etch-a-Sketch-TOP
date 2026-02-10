@@ -16,12 +16,29 @@ const createDivs = (size) => {
 // Mouse Hover
 container.addEventListener("mouseover", e => {
     if (e.target.classList.contains("square")) {
-        e.target.style.backgroundColor = "red";
+        const red = Math.floor(Math.random() * 256);
+        const green = Math.floor(Math.random() * 256);
+        const blue = Math.floor(Math.random() * 256);
+
+        e.target.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
     }
 })
 // container.addEventListener("mouseout", e => {
 //     if (e.target.classList.contains("square")) {
 //         e.target.style.backgroundColor = "white";
+//     }
+// })
+
+// Mouse Left Click and Drag
+// container.addEventListener("mousemove", e => {
+//     if (e.buttons === 1) {
+//         if (e.target.classList.contains("square")) {
+//             const red = Math.floor(Math.random() * 256);
+//             const green = Math.floor(Math.random() * 256);
+//             const blue = Math.floor(Math.random() * 256);
+
+//             e.target.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+//         }
 //     }
 // })
 
